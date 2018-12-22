@@ -4,8 +4,7 @@ import axios from "axios";
 import { connect } from "react-redux";
 import { updateSelectedScale, getSavedScales } from "../../ducks/reducer";
 import { Link } from "react-router-dom";
-
-const BASE_URL = "http://localhost:3005";
+import { toast } from "react-toastify";
 
 class Dashboard extends Component {
   constructor(props) {
@@ -24,10 +23,10 @@ class Dashboard extends Component {
 
   deleteSavedScale = id => {
     axios.delete(`/saved/${id}`).then(response => {
-      this.setState(
-        { scales: response.data },
-        alert("Successfully removed scale from favorites")
-      );
+      this.setState({ scales: response.data });
+      toast.warn("Successfully removed scale from favorites", {
+        position: "top-center"
+      });
     });
   };
 
@@ -42,7 +41,6 @@ class Dashboard extends Component {
               style={{
                 display: "flex",
                 justifyContent: "center",
-                padding: "3px",
                 backgroundColor: "#D3D3D3",
                 padding: "5px"
               }}

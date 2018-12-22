@@ -2,14 +2,12 @@ module.exports = {
   saveScale: (req, res) => {
     const dbInstance = req.app.get("db");
     const { key, scale } = req.body;
-    const { id } = req.user;
+    const { authid } = req.user;
 
     dbInstance
-      .save_scale([key, scale, id])
-      .then(keyScale => {
-        dbInstance.get_saved().then(savedScales => {
-          res.status(200).send(savedScales);
-        });
+      .save_scale([key, scale, authid])
+      .then(savedScales => {
+        res.status(200).send(savedScales);
       })
       .catch(err => {
         console.log("error in", err);
@@ -19,10 +17,10 @@ module.exports = {
 
   getSaved: (req, res) => {
     const dbInstance = req.app.get("db");
-    const { id } = req.user;
+    const { authid } = req.user;
 
     dbInstance
-      .get_saved([id])
+      .get_saved([authid])
       .then(scales => {
         res.status(200).send(scales);
       })

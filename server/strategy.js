@@ -30,7 +30,6 @@ const strategy = new Auth0Strategy(
           });
       }
     });
-    return done(null, profile);
   }
 );
 

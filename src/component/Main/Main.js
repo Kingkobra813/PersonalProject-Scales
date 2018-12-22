@@ -7,10 +7,9 @@ import SavedScales from "../Buttons/SavedScales";
 import FretboardImage from "../Shared/SVG/basic-fretboard (1).jpg";
 import { connect } from "react-redux";
 import { Button } from "react-bootstrap";
+import { toast } from "react-toastify";
 
 import axios from "axios";
-
-const BASE_URL = "http://localhost:3005";
 
 const notes = [
   "A",
@@ -46,7 +45,9 @@ const scales = {
   lydian: [2, 2, 2, 1, 2, 2, 1],
   mixolydian: [2, 2, 1, 2, 2, 1, 2],
   aeolian: [2, 1, 2, 2, 1, 2, 2],
-  locrian: [1, 2, 2, 1, 2, 2, 2]
+  locrian: [1, 2, 2, 1, 2, 2, 2],
+  minorPentatonic: [3, 2, 2, 3, 2],
+  majorPentatonic: [2, 2, 3, 2, 3]
 };
 
 class Main extends Component {
@@ -61,10 +62,6 @@ class Main extends Component {
   }
 
   componentDidMount() {
-    axios.get("/main").then(response => {
-      console.log(response);
-    });
-
     if (this.props.selectedScale) {
       this.getNotes(this.props.selectedKey, this.props.selectedScale);
       this.setState({
@@ -80,7 +77,11 @@ class Main extends Component {
     const indexOfRootNote = notes.indexOf(rootNote);
     let allNotes = [];
     const incrementor =
-      chosenScale === "phrygian" || chosenScale === "locrian" ? 1 : 2;
+      chosenScale === "phrygian" || chosenScale === "locrian"
+        ? 1
+        : chosenScale === "minorPentatonic"
+        ? 3
+        : 2;
     let j = 0;
     allNotes.push(notes[indexOfRootNote]);
     for (
@@ -113,7 +114,9 @@ class Main extends Component {
         scale: this.state.chosenScale
       })
       .then(response => {
-        alert("Successfully saved to favorites.");
+        toast.success("Successfully saved to favorites.", {
+          position: "top-center"
+        });
       });
   };
 

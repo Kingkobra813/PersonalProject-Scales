@@ -1,6 +1,5 @@
 import React from "react";
 import Note from "./Note";
-import Root from "./RootNote";
 
 class NoteGrid extends React.Component {
   render() {
@@ -424,15 +423,7 @@ class NoteGrid extends React.Component {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: 50,
-
-              //
-              // width: 70,
-              // display: 'flex',
-              justifyContent: "center",
-              alignItems: "center"
-              //
-              // height: 50
+              height: 50
             }}
           >
             {this.props.notes.includes("G") && (
