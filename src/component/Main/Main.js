@@ -8,6 +8,7 @@ import FretboardImage from "../Shared/SVG/basic-fretboard (1).jpg";
 import { connect } from "react-redux";
 import { Button } from "react-bootstrap";
 import { toast } from "react-toastify";
+import SheetMusic from "../Shared/SVG/blankSheetMusic.jpg";
 
 import axios from "axios";
 
@@ -55,8 +56,8 @@ class Main extends Component {
     super(props);
 
     this.state = {
-      chosenScale: "ionian",
-      rootNote: "C",
+      chosenScale: "",
+      rootNote: "",
       notes: []
     };
   }
@@ -69,7 +70,7 @@ class Main extends Component {
         rootNote: this.props.selectedKey
       });
     } else {
-      this.getNotes(this.state.rootNote, this.state.chosenScale);
+      //   this.getNotes(this.state.rootNote, this.state.chosenScale);
     }
   }
 
@@ -107,6 +108,10 @@ class Main extends Component {
     this.getNotes(this.state.rootNote, chosenScale);
   };
 
+  handleAddNote = event => {
+    this.setState({ notes: this.state.notes.concat(event) });
+  };
+
   handleSaveScale = () => {
     axios
       .post("/saved", {
@@ -130,7 +135,11 @@ class Main extends Component {
           flexDirection: "column",
           padding: "15px",
           backgroundColor: "#D3D3D3",
-          height: "100vh"
+          background: `url('${SheetMusic}')`,
+          backgroundRepeat: "no-repeat",
+          height: "100vh",
+          margin: "0 auto",
+          width: "50%"
         }}
       >
         <div
@@ -146,7 +155,15 @@ class Main extends Component {
             backgroundSize: "cover"
           }}
         >
-          <NoteGrid notes={this.state.notes} root={this.state.rootNote} />
+          {/*
+        pass function through NOteGrid
+        then to Note
+        */}
+          <NoteGrid
+            notes={this.state.notes}
+            root={this.state.rootNote}
+            handleAddNote={this.handleAddNote}
+          />
         </div>
         {/* <Scales scale={this.state.chosenScale} rootNote={this.state.rootNote} updateNotes={this.updateNotes} /> */}
         <div style={{ display: "flex", padding: "10px" }}>

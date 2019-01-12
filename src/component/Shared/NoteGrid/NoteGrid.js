@@ -8,6 +8,8 @@ class NoteGrid extends React.Component {
         {/* string 1 */}
         <div style={{ display: "flex", height: 40 }}>
           <div
+            onClick={() => this.props.handleAddNote("E")}
+            name="E"
             style={{
               width: 50,
               display: "flex",
@@ -29,6 +31,7 @@ class NoteGrid extends React.Component {
 
           {/* fret 1 */}
           <div
+            onClick={() => this.props.handleAddNote("F")}
             style={{
               width: 120,
               display: "flex",
@@ -44,6 +47,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 2 */}
           <div
+            onClick={() => this.props.handleAddNote("F#")}
             style={{
               width: 117,
               display: "flex",
@@ -59,6 +63,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 3 */}
           <div
+            onClick={() => this.props.handleAddNote("G")}
             style={{
               width: 112,
               display: "flex",
@@ -74,6 +79,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 4 */}
           <div
+            onClick={() => this.props.handleAddNote("G#")}
             style={{
               width: 105,
               display: "flex",
@@ -89,6 +95,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 5 */}
           <div
+            onClick={() => this.props.handleAddNote("A")}
             style={{
               width: 99,
               display: "flex",
@@ -104,6 +111,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 6 */}
           <div
+            onClick={() => this.props.handleAddNote("A#")}
             style={{
               width: 93,
               display: "flex",
@@ -119,6 +127,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 7 */}
           <div
+            onClick={() => this.props.handleAddNote("B")}
             style={{
               width: 88,
               display: "flex",
@@ -134,6 +143,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 8 */}
           <div
+            onClick={() => this.props.handleAddNote("C")}
             style={{
               width: 84,
               display: "flex",
@@ -149,6 +159,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 9 */}
           <div
+            onClick={() => this.props.handleAddNote("C#")}
             style={{
               width: 80,
               display: "flex",
@@ -164,6 +175,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 10 */}
           <div
+            onClick={() => this.props.handleAddNote("D")}
             style={{
               width: 75,
               display: "flex",
@@ -179,6 +191,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 11 */}
           <div
+            onClick={() => this.props.handleAddNote("D#")}
             style={{
               width: 70,
               display: "flex",
@@ -194,6 +207,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 12 */}
           <div
+            onClick={() => this.props.handleAddNote("E")}
             style={{
               width: 67,
               display: "flex",
@@ -212,6 +226,7 @@ class NoteGrid extends React.Component {
         {/* string 2 */}
         <div style={{ display: "flex", height: 45 }}>
           <div
+            onClick={() => this.props.handleAddNote("B")}
             style={{
               width: 50,
               display: "flex",
@@ -234,6 +249,7 @@ class NoteGrid extends React.Component {
 
           {/* fret 1 */}
           <div
+            onClick={() => this.props.handleAddNote("C")}
             style={{
               width: 120,
               display: "flex",
@@ -249,6 +265,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 2 */}
           <div
+            onClick={() => this.props.handleAddNote("C#")}
             style={{
               width: 117,
               display: "flex",
@@ -264,6 +281,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 3 */}
           <div
+            onClick={() => this.props.handleAddNote("D")}
             style={{
               width: 112,
               display: "flex",
@@ -279,6 +297,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 4 */}
           <div
+            onClick={() => this.props.handleAddNote("D#")}
             style={{
               width: 105,
               display: "flex",
@@ -294,6 +313,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 5 */}
           <div
+            onClick={() => this.props.handleAddNote("E")}
             style={{
               width: 99,
               display: "flex",
@@ -309,6 +329,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 6 */}
           <div
+            onClick={() => this.props.handleAddNote("F")}
             style={{
               width: 93,
               display: "flex",
@@ -324,6 +345,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 7 */}
           <div
+            onClick={() => this.props.handleAddNote("F#")}
             style={{
               width: 88,
               display: "flex",
@@ -339,6 +361,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 8 */}
           <div
+            onClick={() => this.props.handleAddNote("G")}
             style={{
               width: 84,
               display: "flex",
@@ -354,6 +377,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 9 */}
           <div
+            onClick={() => this.props.handleAddNote("G#")}
             style={{
               width: 80,
               display: "flex",
@@ -369,6 +393,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 10 */}
           <div
+            onClick={() => this.props.handleAddNote("A")}
             style={{
               width: 75,
               display: "flex",
@@ -384,6 +409,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 11 */}
           <div
+            onClick={() => this.props.handleAddNote("A#")}
             style={{
               width: 70,
               display: "flex",
@@ -399,6 +425,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 12 */}
           <div
+            onClick={() => this.props.handleAddNote("B")}
             style={{
               width: 67,
               display: "flex",
@@ -418,6 +445,7 @@ class NoteGrid extends React.Component {
 
         <div style={{ display: "flex", height: 45 }}>
           <div
+            onClick={() => this.props.handleAddNote("G")}
             style={{
               width: 50,
               display: "flex",
@@ -433,6 +461,7 @@ class NoteGrid extends React.Component {
 
           {/* fret 1 */}
           <div
+            onClick={() => this.props.handleAddNote("G#")}
             style={{
               width: 120,
               display: "flex",
@@ -448,6 +477,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 2 */}
           <div
+            onClick={() => this.props.handleAddNote("A")}
             style={{
               width: 117,
               display: "flex",
@@ -463,6 +493,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 3 */}
           <div
+            onClick={() => this.props.handleAddNote("A#")}
             style={{
               width: 112,
               display: "flex",
@@ -478,6 +509,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 4 */}
           <div
+            onClick={() => this.props.handleAddNote("B")}
             style={{
               width: 105,
               display: "flex",
@@ -493,6 +525,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 5 */}
           <div
+            onClick={() => this.props.handleAddNote("C")}
             style={{
               width: 99,
               display: "flex",
@@ -508,6 +541,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 6 */}
           <div
+            onClick={() => this.props.handleAddNote("C#")}
             style={{
               width: 93,
               display: "flex",
@@ -523,6 +557,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 7 */}
           <div
+            onClick={() => this.props.handleAddNote("D")}
             style={{
               width: 88,
               display: "flex",
@@ -538,6 +573,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 8 */}
           <div
+            onClick={() => this.props.handleAddNote("D#")}
             style={{
               width: 84,
               display: "flex",
@@ -553,6 +589,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 9 */}
           <div
+            onClick={() => this.props.handleAddNote("E")}
             style={{
               width: 80,
               display: "flex",
@@ -568,6 +605,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 10 */}
           <div
+            onClick={() => this.props.handleAddNote("F")}
             style={{
               width: 75,
               display: "flex",
@@ -583,6 +621,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 11 */}
           <div
+            onClick={() => this.props.handleAddNote("F#")}
             style={{
               width: 70,
               display: "flex",
@@ -598,6 +637,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 12 */}
           <div
+            onClick={() => this.props.handleAddNote("G")}
             style={{
               width: 67,
               display: "flex",
@@ -617,6 +657,7 @@ class NoteGrid extends React.Component {
 
         <div style={{ display: "flex", height: 45 }}>
           <div
+            onClick={() => this.props.handleAddNote("D")}
             style={{
               width: 50,
               display: "flex",
@@ -632,6 +673,7 @@ class NoteGrid extends React.Component {
 
           {/* fret 1 */}
           <div
+            onClick={() => this.props.handleAddNote("D#")}
             style={{
               width: 120,
               display: "flex",
@@ -647,6 +689,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 2 */}
           <div
+            onClick={() => this.props.handleAddNote("E")}
             style={{
               width: 117,
               display: "flex",
@@ -662,6 +705,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 3 */}
           <div
+            onClick={() => this.props.handleAddNote("F")}
             style={{
               width: 112,
               display: "flex",
@@ -677,6 +721,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 4 */}
           <div
+            onClick={() => this.props.handleAddNote("F#")}
             style={{
               width: 105,
               display: "flex",
@@ -692,6 +737,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 5 */}
           <div
+            onClick={() => this.props.handleAddNote("G")}
             style={{
               width: 99,
               display: "flex",
@@ -707,6 +753,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 6 */}
           <div
+            onClick={() => this.props.handleAddNote("G#")}
             style={{
               width: 93,
               display: "flex",
@@ -722,6 +769,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 7 */}
           <div
+            onClick={() => this.props.handleAddNote("A")}
             style={{
               width: 88,
               display: "flex",
@@ -737,6 +785,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 8 */}
           <div
+            onClick={() => this.props.handleAddNote("A#")}
             style={{
               width: 84,
               display: "flex",
@@ -752,6 +801,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 9 */}
           <div
+            onClick={() => this.props.handleAddNote("B")}
             style={{
               width: 80,
               display: "flex",
@@ -767,6 +817,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 10 */}
           <div
+            onClick={() => this.props.handleAddNote("C")}
             style={{
               width: 75,
               display: "flex",
@@ -782,6 +833,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 11 */}
           <div
+            onClick={() => this.props.handleAddNote("C#")}
             style={{
               width: 70,
               display: "flex",
@@ -797,6 +849,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 12 */}
           <div
+            onClick={() => this.props.handleAddNote("D")}
             style={{
               width: 67,
               display: "flex",
@@ -816,6 +869,7 @@ class NoteGrid extends React.Component {
 
         <div style={{ display: "flex", height: 50 }}>
           <div
+            onClick={() => this.props.handleAddNote("A")}
             style={{
               width: 50,
               display: "flex",
@@ -831,6 +885,7 @@ class NoteGrid extends React.Component {
 
           {/* fret 1 */}
           <div
+            onClick={() => this.props.handleAddNote("A#")}
             style={{
               width: 120,
               display: "flex",
@@ -846,6 +901,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 2 */}
           <div
+            onClick={() => this.props.handleAddNote("B")}
             style={{
               width: 117,
               display: "flex",
@@ -861,6 +917,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 3 */}
           <div
+            onClick={() => this.props.handleAddNote("C")}
             style={{
               width: 112,
               display: "flex",
@@ -876,6 +933,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 4 */}
           <div
+            onClick={() => this.props.handleAddNote("C#")}
             style={{
               width: 105,
               display: "flex",
@@ -891,6 +949,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 5 */}
           <div
+            onClick={() => this.props.handleAddNote("D")}
             style={{
               width: 99,
               display: "flex",
@@ -906,6 +965,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 6 */}
           <div
+            onClick={() => this.props.handleAddNote("D#")}
             style={{
               width: 93,
               display: "flex",
@@ -921,6 +981,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 7 */}
           <div
+            onClick={() => this.props.handleAddNote("E")}
             style={{
               width: 88,
               display: "flex",
@@ -936,6 +997,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 8 */}
           <div
+            onClick={() => this.props.handleAddNote("F")}
             style={{
               width: 84,
               display: "flex",
@@ -951,6 +1013,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 9 */}
           <div
+            onClick={() => this.props.handleAddNote("F#")}
             style={{
               width: 80,
               display: "flex",
@@ -966,6 +1029,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 10 */}
           <div
+            onClick={() => this.props.handleAddNote("G")}
             style={{
               width: 75,
               display: "flex",
@@ -981,6 +1045,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 11 */}
           <div
+            onClick={() => this.props.handleAddNote("G#")}
             style={{
               width: 70,
               display: "flex",
@@ -996,6 +1061,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 12 */}
           <div
+            onClick={() => this.props.handleAddNote("A")}
             style={{
               width: 67,
               display: "flex",
@@ -1015,6 +1081,7 @@ class NoteGrid extends React.Component {
 
         <div style={{ display: "flex", height: 50 }}>
           <div
+            onClick={() => this.props.handleAddNote("E")}
             style={{
               width: 50,
               display: "flex",
@@ -1030,6 +1097,7 @@ class NoteGrid extends React.Component {
 
           {/* fret 1 */}
           <div
+            onClick={() => this.props.handleAddNote("F")}
             style={{
               width: 120,
               display: "flex",
@@ -1045,6 +1113,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 2 */}
           <div
+            onClick={() => this.props.handleAddNote("F#")}
             style={{
               width: 117,
               display: "flex",
@@ -1060,6 +1129,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 3 */}
           <div
+            onClick={() => this.props.handleAddNote("G")}
             style={{
               width: 112,
               display: "flex",
@@ -1075,6 +1145,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 4 */}
           <div
+            onClick={() => this.props.handleAddNote("G#")}
             style={{
               width: 105,
               display: "flex",
@@ -1090,6 +1161,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 5 */}
           <div
+            onClick={() => this.props.handleAddNote("A")}
             style={{
               width: 99,
               display: "flex",
@@ -1105,6 +1177,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 6 */}
           <div
+            onClick={() => this.props.handleAddNote("A#")}
             style={{
               width: 93,
               display: "flex",
@@ -1120,6 +1193,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 7 */}
           <div
+            onClick={() => this.props.handleAddNote("B")}
             style={{
               width: 88,
               display: "flex",
@@ -1135,6 +1209,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 8 */}
           <div
+            onClick={() => this.props.handleAddNote("C")}
             style={{
               width: 84,
               display: "flex",
@@ -1150,6 +1225,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 9 */}
           <div
+            onClick={() => this.props.handleAddNote("C#")}
             style={{
               width: 80,
               display: "flex",
@@ -1165,6 +1241,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 10 */}
           <div
+            onClick={() => this.props.handleAddNote("D")}
             style={{
               width: 75,
               display: "flex",
@@ -1180,6 +1257,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 11 */}
           <div
+            onClick={() => this.props.handleAddNote("D#")}
             style={{
               width: 70,
               display: "flex",
@@ -1195,6 +1273,7 @@ class NoteGrid extends React.Component {
           </div>
           {/* fret 12 */}
           <div
+            onClick={() => this.props.handleAddNote("E")}
             style={{
               width: 67,
               display: "flex",
