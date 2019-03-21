@@ -133,8 +133,8 @@ class Main extends Component {
 
           alignItems: "center",
           flexDirection: "column",
-          padding: "15px",
-          backgroundColor: "#D3D3D3",
+          padding: "50px",
+          //backgroundColor: "#D3D3D3",
           background: `url('${SheetMusic}')`,
           backgroundRepeat: "no-repeat",
           height: "100vh",
