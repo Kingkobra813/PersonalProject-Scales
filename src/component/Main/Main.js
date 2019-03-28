@@ -57,7 +57,7 @@ class Main extends Component {
 
     this.state = {
       chosenScale: "",
-      rootNote: "",
+      rootNote: "C",
       notes: []
     };
   }

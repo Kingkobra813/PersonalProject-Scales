@@ -32,7 +32,7 @@ class Auth extends Component {
           <div>
             <h1>Guitar Scale Generator</h1>
 
-            <Button href="http://localhost:3005/login">Login</Button>
+            <Button href={"http://localhost:3005/login"}>Login</Button>
           </div>
         </div>
       </div>
