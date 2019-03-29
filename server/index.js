@@ -8,6 +8,8 @@ const strategy = require(`./strategy`);
 const app = require("./app");
 const controller = require("./controller");
 
+app.use(express.static(`${__dirname}/../build`));
+
 app.use(bodyParser.json());
 app.use(cors());
 
