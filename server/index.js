@@ -7,6 +7,8 @@ const bodyParser = require("body-parser");
 const strategy = require(`./strategy`);
 const app = require("./app");
 const controller = require("./controller");
+const express = require("express");
+const expresss = express();
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -51,7 +53,7 @@ app.get("/me", (req, res, next) => {
   }
 });
 
-// app.use(express.static(`${__dirname}/../build`));
+app.use(express.static(`${__dirname}/../build`));
 
 massive(process.env.CONNECTION_STRING)
   .then(dbInstance => {
