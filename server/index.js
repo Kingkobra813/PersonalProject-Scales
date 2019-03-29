@@ -8,7 +8,9 @@ const strategy = require(`./strategy`);
 const app = require("./app");
 const controller = require("./controller");
 const express = require("express");
-const expresss = express();
+const express = express();
+
+app.use(express.static(`${__dirname}/../build`));
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -52,8 +54,6 @@ app.get("/me", (req, res, next) => {
     res.status(200).send(JSON.stringify(req.session.user, null, 10));
   }
 });
-
-app.use(express.static(`${__dirname}/../build`));
 
 massive(process.env.CONNECTION_STRING)
   .then(dbInstance => {
